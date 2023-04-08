@@ -145,29 +145,32 @@ main > div {
   stroke-width: 5;
   stroke-linecap: round;
   stroke-dasharray: 283;
-  stroke-dashoffset: -30;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
 }
 
+.html .loader {
+  animation: html-loader 2s cubic-bezier(0.13, 1.06, 0.75, 1) forwards;
+}
+
 .css .loader {
-  stroke-dashoffset: -40;
+  animation: css-loader 2s cubic-bezier(0.13, 1.06, 0.75, 1) forwards;
 }
 
 .js .loader {
-  stroke-dashoffset: -60;
+  animation: js-loader 2s cubic-bezier(0.13, 1.06, 0.75, 1) forwards;
 }
 
 .ts .loader {
-  stroke-dashoffset: -150;
+  animation: ts-loader 2s cubic-bezier(0.13, 1.06, 0.75, 1) forwards;
 }
 
 .react .loader {
-  stroke-dashoffset: -130;
+  animation: react-loader 2s cubic-bezier(0.13, 1.06, 0.75, 1) forwards;
 }
 
 .python .loader {
-  stroke-dashoffset: -150;
+  animation: python-loader 2s cubic-bezier(0.13, 1.06, 0.75, 1) forwards;
 }
 
 /* footer 영역 */
@@ -190,6 +193,61 @@ footer::before {
   width: 100%;
   height: 2px;
   background-color: #747474;
+}
+
+/* 애니메이션 */
+@keyframes html-loader {
+  from {
+    stroke-dashoffset: -283;
+  }
+  to {
+    stroke-dashoffset: -30;
+  }
+}
+
+@keyframes css-loader {
+  from {
+    stroke-dashoffset: -283;
+  }
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+@keyframes js-loader {
+  from {
+    stroke-dashoffset: -283;
+  }
+  to {
+    stroke-dashoffset: -60;
+  }
+}
+
+@keyframes ts-loader {
+  from {
+    stroke-dashoffset: -283;
+  }
+  to {
+    stroke-dashoffset: -150;
+  }
+}
+
+@keyframes react-loader {
+  from {
+    stroke-dashoffset: -283;
+  }
+  to {
+    stroke-dashoffset: -130;
+  }
+}
+
+@keyframes python-loader {
+  from {
+    stroke-dashoffset: -283;
+  }
+  to {
+    stroke-dashoffset: -150;
+  }
 }
 
 /* 반응형 */
