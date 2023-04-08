@@ -211,3 +211,9 @@ footer::before {
     margin-bottom: 50px;
   }
 }
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 20px;
+  }
+}
