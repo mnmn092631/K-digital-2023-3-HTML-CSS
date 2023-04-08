@@ -1,16 +1,7 @@
 /* reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
-}
-
 ul,
 ol,
-li,
-dl,
-dt,
-dd {
+li {
   list-style-type: none;
   padding-left: 0;
   margin-left: 0;
@@ -21,23 +12,202 @@ a {
   text-decoration: none;
 }
 
-button:focus,
-button:active,
-input:focus,
-input:active {
-  outline: none;
-  box-shadow: none;
-}
-
-button {
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  background-color: inherit;
-}
-
-button,
-input,
-textarea {
+/* 기본 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0;
   font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.05em;
+  color: #747474;
+}
+
+body {
+  padding: 5vh 5vw;
+}
+
+h1 {
+  color: #474747;
+}
+
+a:hover,
+a:hover > i {
+  color: #c6c6c6;
+  transition: color 350ms ease-in-out;
+}
+
+/* header 영역 */
+header {
+  position: sticky;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > h1 {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #747474;
+}
+
+header > h1 {
+  text-transform: uppercase;
+}
+
+/* main 영역 */
+main {
+  height: 70vh;
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+/* main > section 공통 영역 */
+main section > h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+main section > ul,
+main section > ol {
+  margin-left: 15px;
+}
+
+main section > ul > li,
+main section > ol > li {
+  margin-bottom: 10px;
+}
+
+/* main > info 영역 */
+#info > div {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+#info > div > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #747474;
+}
+
+/* main > edu 및 skill 영역 */
+main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* main > skill 영역 */
+#skill > ul > li {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+#skill > ul > li:last-child {
+  margin-right: 0;
+}
+
+#skill > ul > li > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+}
+
+.bg {
+  fill: none;
+  stroke: #c6c6c6;
+  stroke-width: 5;
+}
+
+.loader {
+  fill: none;
+  stroke: #474747;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: -30;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+
+.css .loader {
+  stroke-dashoffset: -40;
+}
+
+.js .loader {
+  stroke-dashoffset: -60;
+}
+
+.ts .loader {
+  stroke-dashoffset: -150;
+}
+
+.react .loader {
+  stroke-dashoffset: -130;
+}
+
+.python .loader {
+  stroke-dashoffset: -150;
+}
+
+/* footer 영역 */
+footer {
+  position: sticky;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > h1 {
+  flex-shrink: 0;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  margin-right: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: #747474;
+}
+
+/* 반응형 */
+@media (max-width: 1500px) {
+  #info,
+  main > div {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    display: block;
+    overflow-y: scroll;
+  }
+
+  main > section,
+  main > div > section {
+    margin-bottom: 50px;
+  }
 }
