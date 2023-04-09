@@ -76,13 +76,13 @@ main section > h1 {
   margin-bottom: 10px;
 }
 
-main section > ul,
-main article > ol {
+main ul,
+main ol {
   margin-left: 15px;
 }
 
-main section > ul > li,
-main article > ol > li {
+main ul > li,
+main ol > li {
   margin-bottom: 10px;
 }
 
