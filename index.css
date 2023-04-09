@@ -173,6 +173,10 @@ main > .car {
   animation: python-loader 2s cubic-bezier(0.13, 1.06, 0.75, 1) forwards;
 }
 
+.r .loader {
+  animation: r-loader 2s cubic-bezier(0.13, 1.06, 0.75, 1) forwards;
+}
+
 /* footer 영역 */
 footer {
   position: sticky;
@@ -247,6 +251,15 @@ footer::before {
   }
   to {
     stroke-dashoffset: -150;
+  }
+}
+
+@keyframes r-loader {
+  from {
+    stroke-dashoffset: -283;
+  }
+  to {
+    stroke-dashoffset: -130;
   }
 }
 
