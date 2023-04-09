@@ -67,22 +67,22 @@ main {
   padding: 5%;
   display: flex;
   justify-content: space-around;
-  border-radius: 10px;
 }
 
-/* main > section 공통 영역 */
+/* main 요소 공통 영역 */
+main article > h1,
 main section > h1 {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 main section > ul,
-main section > ol {
+main article > ol {
   margin-left: 15px;
 }
 
 main section > ul > li,
-main section > ol > li {
+main article > ol > li {
   margin-bottom: 10px;
 }
 
@@ -101,7 +101,7 @@ main section > ol > li {
 }
 
 /* main > edu 및 skill 영역 */
-main > div {
+main > .car {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -264,9 +264,28 @@ footer::before {
     overflow-y: scroll;
   }
 
-  main > section,
-  main > div > section {
+  /* 스크롤바 커스텀 */
+  main::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+  }
+
+  main::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  main::-webkit-scrollbar-thumb {
+    background-color: #e8e8e8;
+    border-radius: 5px;
+  }
+
+  main > article,
+  main > article > section {
     margin-bottom: 50px;
+  }
+
+  main > .car {
+    margin-bottom: 0;
   }
 }
 
