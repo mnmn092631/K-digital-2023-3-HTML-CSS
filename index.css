@@ -89,10 +89,12 @@ main ol > li {
 /* main > info 영역 */
 #info > div {
   max-width: 300px;
+  width: 90%;
   margin-bottom: 20px;
 }
 
 #info > div > img {
+  margin: 0 auto;
   width: 100%;
   height: auto;
   display: block;
@@ -271,7 +273,7 @@ footer::before {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1260px) {
   main {
     display: block;
     overflow-y: scroll;
