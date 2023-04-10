@@ -204,64 +204,64 @@ footer::before {
 /* 애니메이션 */
 @keyframes html-loader {
   from {
-    stroke-dashoffset: -283;
+    stroke-dashoffset: 283;
   }
   to {
-    stroke-dashoffset: -30;
+    stroke-dashoffset: 536;
   }
 }
 
 @keyframes css-loader {
   from {
-    stroke-dashoffset: -283;
+    stroke-dashoffset: 283;
   }
   to {
-    stroke-dashoffset: -40;
+    stroke-dashoffset: 526;
   }
 }
 
 @keyframes js-loader {
   from {
-    stroke-dashoffset: -283;
+    stroke-dashoffset: 283;
   }
   to {
-    stroke-dashoffset: -60;
+    stroke-dashoffset: 506;
   }
 }
 
 @keyframes ts-loader {
   from {
-    stroke-dashoffset: -283;
+    stroke-dashoffset: 283;
   }
   to {
-    stroke-dashoffset: -150;
+    stroke-dashoffset: 416;
   }
 }
 
 @keyframes react-loader {
   from {
-    stroke-dashoffset: -283;
+    stroke-dashoffset: 283;
   }
   to {
-    stroke-dashoffset: -130;
+    stroke-dashoffset: 436;
   }
 }
 
 @keyframes python-loader {
   from {
-    stroke-dashoffset: -283;
+    stroke-dashoffset: 283;
   }
   to {
-    stroke-dashoffset: -150;
+    stroke-dashoffset: 416;
   }
 }
 
 @keyframes r-loader {
   from {
-    stroke-dashoffset: -283;
+    stroke-dashoffset: 283;
   }
   to {
-    stroke-dashoffset: -130;
+    stroke-dashoffset: 436;
   }
 }
 
