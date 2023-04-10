@@ -267,9 +267,12 @@ footer::before {
 
 /* 반응형 */
 @media (max-width: 1500px) {
-  #info,
-  main > div {
+  main > article {
     margin-right: 20px;
+  }
+
+  main > article:last-child {
+    margin-right: 0;
   }
 }
 
@@ -277,6 +280,19 @@ footer::before {
   main {
     display: block;
     overflow-y: scroll;
+  }
+
+  main > article {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  main > article:last-child {
+    margin-bottom: 0;
+  }
+
+  main > article.car > section {
+    margin-bottom: 20px;
   }
 
   /* 스크롤바 커스텀 */
@@ -292,15 +308,6 @@ footer::before {
   main::-webkit-scrollbar-thumb {
     background-color: #e8e8e8;
     border-radius: 5px;
-  }
-
-  main > article,
-  main > article > section {
-    margin-bottom: 50px;
-  }
-
-  main > .car {
-    margin-bottom: 0;
   }
 }
 
